@@ -16,7 +16,7 @@ function Footer() {
         <li>Login</li>
       </ul>
 
-      <div>
+      <div className='Contact-contact'>
         <h2>Contact</h2>
         <ul>
           <li>1234 Main St, Chicago, IL 60654</li>
@@ -25,11 +25,13 @@ function Footer() {
         </ul>
       </div>
 
-      <div>
+      <div className='Contact-Socialmedia'>
         <h2>Social media links</h2>
-        <FaFacebook/>
-        <FaInstagram/>
-        <FaTwitter/>
+          <div className='Contact-Socialmedia-links'>
+            <a href="https://facebook.com"><FaFacebook/></a>
+            <a href="https://instagram.com"><FaInstagram/></a>
+            <a href="https://twitter.com"><FaTwitter/></a>
+          </div>
       </div>
     </footer>
   );

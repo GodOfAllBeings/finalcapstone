@@ -1,0 +1,58 @@
+.T-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #edefee;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+
+.T-card-review{
+
+}
+
+.T-card-name{
+
+}
+
+.T-card-bottom-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:0;
+}
+
+.T-card-stars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.T-card-stars > p{
+    margin: 0;
+}
+
+.T-card-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.T-card-img{
+    width: 120px;
+    height: 120px;
+}
+
+.T-card-rating{
+
+}

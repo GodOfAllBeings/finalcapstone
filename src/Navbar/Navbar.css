@@ -1,0 +1,31 @@
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+/* .navbar-logo{
+    
+} */
+
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 2rem;
+    gap: 2rem;
+}
+
+.navbar-item > a{
+    text-decoration: none;
+}
+
+.navbar-item > a:hover{
+    text-decoration: underline;
+}

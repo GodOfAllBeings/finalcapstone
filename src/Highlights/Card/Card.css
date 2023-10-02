@@ -1,0 +1,50 @@
+.card{
+    width: 100%;
+    background-color: #edefee;
+    height: 500px;
+}
+
+.card-img{
+    width: 100%;
+    height: 250px;
+}
+
+.card-content{
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    height: calc(250px - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-content-1, .card-content-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card-content-3{
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.card-title{
+    margin: 0;
+}
+
+.card-price{
+    color: #ee9972;
+}
+
+.card-description{
+
+}
+
+.card-ordertext{
+
+}

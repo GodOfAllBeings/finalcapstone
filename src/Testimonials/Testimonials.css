@@ -1,0 +1,20 @@
+.testimonials-card{
+    width: 20%;
+    height: 300px;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+
+}
+
+.Section-testimonials > h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}

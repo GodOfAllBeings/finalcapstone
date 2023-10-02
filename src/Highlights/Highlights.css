@@ -1,0 +1,36 @@
+.Section-highlights{
+    margin-top: 5rem;
+}
+
+.highlights-top-ordering{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    position: inherit;
+}
+
+.highlights-top-ordering > h1, .highlights-button-container{
+    width: 30%;
+    text-align: left;
+}
+
+.highlights-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.highlights-card{
+    width: 30%;
+}
+
+.highlights-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

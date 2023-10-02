@@ -1,0 +1,81 @@
+
+/* Container for the reservation page */
+.reservation-page {
+    padding: 20px;
+    min-height: calc(100vh - 350px);
+  }
+  
+  /* Centered header */
+  .reservation-page h2 {
+    color: #495e57;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Label styling for form fields */
+  .reservation-form label {
+    color: #495e57;
+  }
+
+  .reservation-form .form-group{
+    width: 100%;
+  }
+  
+  /* Date picker styling */
+  .reservation-form .form-group:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  
+  /* Time picker styling */
+  .reservation-form .form-group:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .reservation-form .time-input {
+    width: 50px; /* Adjust the width as needed */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #edefee;
+    border-radius: 4px;
+  }
+  
+  /* Input field styling */
+  .reservation-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #edefee;
+    border-radius: 4px;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    background: #f4ce14;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Login link styling */
+  .reservation-page p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Login link color */
+  .reservation-page a {
+    color: #f4ce14;
+    font-weight: bold;
+  }

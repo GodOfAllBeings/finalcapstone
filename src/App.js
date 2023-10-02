@@ -1,27 +1,26 @@
 import './App.css';
 import React from 'react';
-import Navbar from './Navbar/Navbar';
-import Highlights from './Highlights/Highlights';
-import Testimonials from './Testimonials/Testimonials';
-import About from './About/About';
-import Footer from './Footer/Footer';
-import Hero from './Hero/Hero';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutPage from './pages/about/about';
+import Home from './pages/home/home';
+import LoginPage from './pages/login/login';
+import Menu from './pages/menu/menu';
+import Reservations from './pages/reservations/reservations';
+import OrderOnline from './pages/orderOnline/orderOnline';
 
 function App() {
   return (
     <>
-      <Navbar/>
-
-      <Hero/>
-
-      <Highlights/>
-
-      <Testimonials/>
-
-      <About/>
-
-      <Footer/>
+      <BrowserRouter>
+      <Routes>
+          <Route path="About" element={<AboutPage />} />
+          <Route path="LoginPage" element={<LoginPage />} />
+          <Route path="Menu" element={<Menu />} />
+          <Route path="Reservations" element={<Reservations />} />
+          <Route path="OrderOnline" element={<OrderOnline />} />
+          <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
