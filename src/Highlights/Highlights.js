@@ -32,7 +32,7 @@ function Highlights() {
       <div className='highlights-div'>
         {highlights.map((highlight, index) => (
           <div className="highlights-card">
-          <Card key={index} title={highlight.title} price={highlight.price} description={highlight.description} img={highlight.img}/>
+          <Card key={index + highlight.title} title={highlight.title} price={highlight.price} description={highlight.description} img={highlight.img}/>
           </div>
         ))}
       </div>
