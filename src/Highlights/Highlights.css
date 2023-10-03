@@ -1,4 +1,4 @@
-.Section-highlights{
+.highlights-section{
     margin-top: 5rem;
 }
 
@@ -11,7 +11,7 @@
     position: inherit;
 }
 
-.highlights-top-ordering > h1, .highlights-button-container{
+.highlights-top-ordering > h2, .highlights-button-container{
     width: 30%;
     text-align: left;
 }

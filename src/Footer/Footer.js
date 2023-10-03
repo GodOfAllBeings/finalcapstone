@@ -5,9 +5,9 @@ import logo from '../assets/Logo.svg';
 
 function Footer() {
   return (
-    <footer className='Section-contact'>
-      <img src={logo}/>
-      <ul>
+    <footer className='footer-section'>
+      <img src={logo} alt='Company Logo' />
+      <ul className='footer-nav'>
         <li>Home</li>
         <li>About</li>
         <li>Menu</li>
@@ -16,7 +16,7 @@ function Footer() {
         <li>Login</li>
       </ul>
 
-      <div className='Contact-contact'>
+      <div className='contact-info'>
         <h2>Contact</h2>
         <ul>
           <li>1234 Main St, Chicago, IL 60654</li>
@@ -25,13 +25,13 @@ function Footer() {
         </ul>
       </div>
 
-      <div className='Contact-Socialmedia'>
+      <div className='social-media'>
         <h2>Social media links</h2>
-          <div className='Contact-Socialmedia-links'>
-            <a href="https://facebook.com"><FaFacebook/></a>
-            <a href="https://instagram.com"><FaInstagram/></a>
-            <a href="https://twitter.com"><FaTwitter/></a>
-          </div>
+        <div className='social-media-links'>
+          <a href="https://facebook.com"><FaFacebook /></a>
+          <a href="https://instagram.com"><FaInstagram /></a>
+          <a href="https://twitter.com"><FaTwitter /></a>
+        </div>
       </div>
     </footer>
   );

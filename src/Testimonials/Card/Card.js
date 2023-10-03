@@ -1,24 +1,25 @@
 import './Card.css';
 import React from 'react';
-import {FaStar} from 'react-icons/fa6';
+import { FaStar } from 'react-icons/fa';
 
 function Card(props) {
-    const { name, reviewText, img, starRating } = props;
-    return (
-        <div className='T-card'>
-            <p className='T-card-rating'>Rating</p>
-            <div className='T-card-center'>
-                <img className='T-card-img' src={img}/>
-                <p className='T-card-name'>{name}</p>
-            </div>
-            <div className='T-card-bottom-section'>
-                <div className='T-card-stars'>
-                    <p>{starRating}</p><FaStar/>
-                </div>
-                <p className='T-card-review'>{reviewText}</p>
-            </div>
+  const { name, reviewText, img, starRating } = props;
+  return (
+    <div className='testimonial-card'>
+      <p className='testimonial-card-rating'>Rating</p>
+      <div className='testimonial-card-center'>
+        <img className='testimonial-card-img' src={img} alt={`${name}'s profile`} />
+        <p className='testimonial-card-name'>{name}</p>
+      </div>
+      <div className='testimonial-card-bottom-section'>
+        <div className='testimonial-card-stars'>
+          <p>{starRating}</p>
+          <FaStar />
         </div>
-    );
+        <p className='testimonial-card-review'>{reviewText}</p>
+      </div>
+    </div>
+  );
 }
 
 export default Card;

@@ -4,8 +4,11 @@ import Card from './Card/Card';
 import bruchetta from '../assets/bruchetta.svg';
 import greekSalad from '../assets/greek salad.jpg';
 import lemonDessert from '../assets/lemon dessert.jpg';
+import { useNavigate } from "react-router-dom";
+
 
 function Highlights() {
+  const navigate = useNavigate();
 
   const highlights = [
     {
@@ -20,23 +23,22 @@ function Highlights() {
   ];
 
   return (
-    <section className='Section-highlights'>
+    <section className='highlights-section'>
 
       <div className='highlights-top-ordering'>
-        <h1>Highlights</h1>
+        <h2 className="highlights-heading">Highlights</h2>
         <div className='highlights-button-container'>
-          <button>Online menu</button>
+        <button onClick={() => {navigate('/Menu');}} className="highlights-button" aria-label="Online Menu">Online menu</button>
         </div>
       </div>
 
       <div className='highlights-div'>
         {highlights.map((highlight, index) => (
-          <div className="highlights-card">
-          <Card key={index + highlight.title} title={highlight.title} price={highlight.price} description={highlight.description} img={highlight.img}/>
+          <div className="highlights-card" key={index + highlight.title}>
+            <Card title={highlight.title} price={highlight.price} description={highlight.description} img={highlight.img}/>
           </div>
         ))}
       </div>
-      {/* Implement cards */}
     </section>
   );
 }

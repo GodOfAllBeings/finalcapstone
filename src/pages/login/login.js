@@ -55,7 +55,9 @@ function LoginPage() {
                 style={{ width: '100%', padding: '8px', marginBottom: '10px', border: '1px solid #edefee', borderRadius: '4px' }}
               />
             </div>
-            <button type="submit" style={{ background: '#f4ce14', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '4px', cursor: 'pointer' }}>{isSignUp ? 'Sign Up' : 'Login'}</button>
+            <button type="submit" style={{ background: '#f4ce14', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '4px', cursor: 'pointer' }} aria-label={isSignUp ? 'Sign Up' : 'Login'}>
+              {isSignUp ? 'Sign Up' : 'Login'}
+            </button>
             <p style={{ textAlign: 'center', marginTop: '10px' }}>
               {isSignUp ? 'Already have an account?' : 'Don\'t have an account?'}
               <span

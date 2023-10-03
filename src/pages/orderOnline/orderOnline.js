@@ -6,7 +6,7 @@ function OrderOnline() {
   return (
     <>
         <Navbar/>
-
+          We do not yet provide this service. Pleas
         <Footer/>
     </>
   );

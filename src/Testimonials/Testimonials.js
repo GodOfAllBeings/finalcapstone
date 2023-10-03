@@ -6,9 +6,6 @@ import profileCarl from '../assets/profileCarl.jpg';
 import profileBritney from '../assets/profileBritney.jpg';
 import profileJannet from '../assets/profileJannet.jpg';
 
-
-
-
 function Testimonials() {
 
   const testimonials = [
@@ -39,12 +36,17 @@ function Testimonials() {
   ];
 
   return (
-    <section className='Section-testimonials'>
+    <section className='testimonials-section'>
         <h1>Testimonials</h1>
         <div className='testimonials-container'>
           {testimonials.map((testimonial, index) => (
-            <div className="testimonials-card">
-            <Card key={index} name={testimonial.name} reviewText={testimonial.reviewText} img={testimonial.img} starRating={testimonial.starRating}/>
+            <div className="testimonials-card" key={index}>
+              <Card
+                name={testimonial.name}
+                reviewText={testimonial.reviewText}
+                img={testimonial.img}
+                starRating={testimonial.starRating}
+              />
             </div>
           ))}
         </div>

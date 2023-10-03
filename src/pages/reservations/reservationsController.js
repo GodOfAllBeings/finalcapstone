@@ -43,10 +43,10 @@ function ReservationsController(props){
         const today = new Date();
         fetchAPI(today)
             .then((data) => {
-            dispatch({ type: 'INITIALIZE_TIMES', payload: data });
+                dispatch({ type: 'INITIALIZE_TIMES', payload: data });
             })
             .catch((error) => {
-            console.error('Error fetching available times:', error);
+                console.error('Error fetching available times:', error);
             });
     };
 
